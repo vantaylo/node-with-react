@@ -1,12 +1,13 @@
+const keys = require('../config/keys');
+const stripe = require("stripe")(keys.stripeSecretKey);
+
 module.exports = app => {
-    // watch for post requests that are made to the API stripe root
-    app.post('/api/stripe', (req, res) => {
-
-        // Handle token 
-        // Reach out to Stripe API 
-        // Finalize Charge
-        // Update user's credit
-
-    })
-
+    app.post('/api/stripe', async (req, res) => {
+        const charge = await stripe.charges.create({
+            amount: 500,
+            currency: 'usd',
+            description: 'credits',
+            source: req.body.id
+        });
+    });
 }
