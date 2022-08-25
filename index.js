@@ -19,7 +19,8 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-require('./routes/authRoutes')(app);
+require('./routes/authRoutes')(app);        // require statment is a function that is called with app
+require('./routes/billingRoutes')(app);
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT);
