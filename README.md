@@ -24,4 +24,5 @@ A large feedback-collection web application that profiles the advanced features 
 | User can see report of all survey responses          | React<br>Redux<br>MongoDB               |
 
 <h3>Server Side Architecture</h3>
-![Server Side Architecture](/server_side_architecture_snapshot.png)
+
+![Server Side Architecture](server_side_architecture_snapshot.png)
