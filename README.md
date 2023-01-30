@@ -1,14 +1,16 @@
 # node-with-react
 
 ## Description
+
 A large feedback-collection web application that profiles the advanced features of React, Redux, Express, and Mongo.
 
 ## User Story
-<b>AS A</b> startup owner of an app/service.   
-<b>I WANT</b> feedback from users.   
-<b>SO THAT</b> I can make app/service better.   
 
-----------
+<b>AS A</b> startup owner of an app/service.  
+<b>I WANT</b> feedback from users.  
+<b>SO THAT</b> I can make app/service better.
+
+---
 
 | User Flow Walkthrough                                | Tech                                    |
 | ---------------------------------------------------- | --------------------------------------- |
@@ -21,5 +23,5 @@ A large feedback-collection web application that profiles the advanced features 
 | App tabulates feedback                               | MongoDB                                 |
 | User can see report of all survey responses          | React<br>Redux<br>MongoDB               |
 
-
 <h3>Server Side Architecture</h3>
+![Server Side Architecture](/server_side_architecture_snapshot.png)
